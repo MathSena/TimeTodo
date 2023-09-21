@@ -18,14 +18,14 @@ import java.time.LocalDateTime;
 @Entity()
 public class Todo implements Serializable {
 
-    @Serial
-    private static final long serialVersionUID = 1L;
+  @Serial private static final long serialVersionUID = 1L;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String title;
-    private String description;
-    private LocalDateTime timeToFinish;
-    private boolean isFinished = false;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
+
+  private String title;
+  private String description;
+  private LocalDateTime timeToFinish;
+  private boolean isFinished = false;
 }
