@@ -51,4 +51,10 @@ public class TodoController {
             .toUri();
     return ResponseEntity.created(uri).body(todo);
   }
+
+  @DeleteMapping(value = "/{id}")
+  public ResponseEntity<Void> deleteTodo(@PathVariable Integer id) {
+    service.delete(id);
+    return ResponseEntity.noContent().build();
+  }
 }
