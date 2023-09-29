@@ -1,0 +1,35 @@
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.content {
+  width: 100%;
+}
+
+.novo-todo {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom:.3rem;
+}
+
+.mat-card {
+  padding: .5rem;
+  margin-top: .8rem;
+  color: #fff !important;
+}
+
+p{
+  text-align: end;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom:0;
+}
+
+.actions {
+  text-align: end;
+}
+
+.actions button {
+  margin: .5rem;
+}

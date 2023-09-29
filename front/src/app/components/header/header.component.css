@@ -1,17 +1,17 @@
-img{
-  height:3rem;
+.header {
+  height: 10%;
+  justify-content: center;
 }
 
-.header{
-  justify-content:center;
-  height:10%;
+img {
+  height: 3rem;
 }
 
-span{
-  display:flex;
-  align-items:center;
+span {
+  display: flex;
+  align-items: center;
 }
 
-h1{
+h1 {
   padding-left: 1.2rem;
 }
