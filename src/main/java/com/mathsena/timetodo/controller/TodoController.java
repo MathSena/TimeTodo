@@ -11,7 +11,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 import java.util.List;
 
-@CrossOrigin("*")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(value = "/todos")
 @Slf4j
