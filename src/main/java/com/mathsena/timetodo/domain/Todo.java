@@ -1,5 +1,6 @@
 package com.mathsena.timetodo.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,7 +11,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -26,6 +27,7 @@ public class Todo implements Serializable {
 
   private String title;
   private String description;
-  private LocalDateTime timeToFinish;
+  @JsonFormat(pattern = "dd/MM/yyyy")
+  private Date timeToFinish;
   private boolean isFinished = false;
 }

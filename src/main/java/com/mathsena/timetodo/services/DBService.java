@@ -5,8 +5,8 @@ import com.mathsena.timetodo.repository.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 @Service
@@ -15,21 +15,21 @@ public class DBService {
     @Autowired
     private TodoRepository todoRepository;
 
-    public void instanceDataBase(){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+    public void instanceDataBase() throws ParseException {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         Todo todo1 =
                 new Todo(
                         null,
                         "Estudar Spring",
                         "Estudo de spring boot",
-                        LocalDateTime.parse("25/03/2022 19:40", formatter),
+                        dateFormat.parse("25/03/2022"),
                         false);
         Todo todo2 =
                 new Todo(
                         null,
                         "Academia",
                         "Estudo de spring boot",
-                        LocalDateTime.parse("25/03/2022 19:40", formatter),
+                        dateFormat.parse("25/03/2022"),
                         true);
 
         Todo todo3 =
@@ -37,7 +37,7 @@ public class DBService {
                         null,
                         "Leitura",
                         "Estudo de spring boot",
-                        LocalDateTime.parse("25/03/2022 19:40", formatter),
+                        dateFormat.parse("25/03/2022"),
                         false);
 
         Todo todo4 =
@@ -45,7 +45,7 @@ public class DBService {
                         null,
                         "Estudo FIAP",
                         "Estudo de spring boot",
-                        LocalDateTime.parse("25/03/2022 19:40", formatter),
+                        dateFormat.parse("25/03/2022"),
                         true);
 
         todoRepository.saveAll(List.of(todo1, todo2, todo3, todo4));
