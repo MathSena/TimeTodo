@@ -23,6 +23,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HeaderComponent} from "./components/header/header.component"; // Add this line
 
 import { MatNativeDateModule } from "@angular/material/core";
+import { UpdateComponent } from './components/update/update.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { MatNativeDateModule } from "@angular/material/core";
     ReadAllComponent,
     FinishedComponent,
     CreateComponent,
+    UpdateComponent,
   ],
   imports: [
     BrowserModule,

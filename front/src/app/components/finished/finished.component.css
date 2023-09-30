@@ -1,32 +1,60 @@
 .container {
   width: 85%;
   margin: auto;
+  background-color: #1a1a1a; /* Fundo preto */
+  border-radius: 8px; /* Cantos arredondados */
+  padding: 20px; /* Espaçamento interno */
+  color: #fff; /* Texto branco */
 }
 
 h1 {
   text-align: center;
   font-weight: 600;
   margin-top: 1rem;
-  color: rgb(97, 93, 93);
+  color: #28a745; /* Verde */
 }
 
 .content {
+  display: grid;
   width: 100%;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .badge button {
   margin-top: 1rem;
   width: 100%;
+  background-color: #28a745; /* Verde */
+  color: #fff; /* Texto branco */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Adicionando transição */
+}
+
+.badge button:hover {
+  background-color: #218838; /* Um verde um pouco mais escuro para o hover */
+  transform: scale(1.1); /* Aumentando o tamanho do botão ao passar o mouse */
 }
 
 p {
   text-align: end;
   font-weight: 600;
-  color: rgb(93, 91, 91);
-  padding-bottom: 0;
+  color: #28a745; /* Verde */
+  margin-bottom: 0;
 }
 
 mat-card {
   margin-top: .8rem;
-  padding: .2rem;
+  padding: .5rem;
+  background-color: #333; /* Fundo preto mais claro */
+  color: #fff; /* Texto branco */
+  border-radius: 8px; /* Cantos arredondados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionando transição */
+}
+
+mat-card:hover {
+  transform: translateY(-10px); /* Movendo o card para cima ao passar o mouse */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adicionando sombra ao passar o mouse */
 }

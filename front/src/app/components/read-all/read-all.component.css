@@ -1,41 +1,59 @@
 .container {
   width: 85%;
   margin: auto;
+  background-color: #1a1a1a; /* Fundo preto */
+  border-radius: 8px; /* Cantos arredondados */
+  padding: 20px; /* Espaçamento interno */
+  color: #fff; /* Texto branco */
 }
 
-.badge{
+.badge {
   margin-top: 1.5rem;
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
 
 .badge button {
   margin: auto;
   width: 100%;
+  background-color: #28a745; /* Verde */
+  color: #fff; /* Texto branco */
 }
 
 .content {
   width: 100%;
+  margin-top:10px;
 }
 
 .novo-todo {
   width: 100%;
   margin-top: 3rem;
-  margin-bottom:.3rem;
+  margin-bottom: .3rem;
+  background-color: #28a745; /* Verde */
+  color: #fff; /* Texto branco */
 }
 
 .mat-card {
   padding: .5rem;
   margin-top: .8rem;
-  color: #fff !important;
+  background-color: #333; /* Fundo preto mais claro */
+  color: #fff; /* Texto branco */
+  border-radius: 8px; /* Cantos arredondados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionando transição */
 }
 
-p{
+.mat-card:hover {
+  transform: translateY(-10px); /* Movendo o card para cima ao passar o mouse */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adicionando sombra ao passar o mouse */
+}
+
+p {
   text-align: end;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom:0;
+  font-weight: 800;
+  color: #28a745; /* Verde */
+  margin-bottom: 0;
+  margin-right: 10px;
 }
 
 .actions {
@@ -44,4 +62,21 @@ p{
 
 .actions button {
   margin: .5rem;
+  background-color: #28a745; /* Verde */
+  color: #fff; /* Texto branco */
+}
+
+.actions button, .badge button, .novo-todo {
+  /* ... (seu CSS anterior para botões) ... */
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Adicionando transição */
+}
+/* Adicionando um pouco de hover effect para os botões */
+.actions button:hover, .badge button:hover, .novo-todo:hover {
+  background-color: #218838; /* Um verde um pouco mais escuro para o hover */
+  transform: scale(1.1); /* Aumentando o tamanho do botão ao passar o mouse */
+}
+
+/* Adicionando um pouco de transição para suavizar o hover effect */
+button {
+  transition: background-color 0.3s ease;
 }

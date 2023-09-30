@@ -1,8 +1,27 @@
-.footer{
-  height:5%;
-  position: fixed;
-  bottom:0;
-  justify-content:flex-end;
-  font-size:1rem;
-
+.footer {
+  height: 50px; /* Altura fixa para garantir consistência */
+  bottom: 0;
+  top: auto;
+  left: 0; /* Garante que o footer comece do lado esquerdo da página */
+  width: 100%; /* Ocupa toda a largura da página */
+  background-color: #1a1a1a; /* Fundo preto */
+  color: #28a745; /* Texto verde */
+  display: flex;
+  align-items: center; /* Alinha verticalmente o conteúdo no centro */
+  justify-content: flex-end; /* Alinha horizontalmente o conteúdo à direita */
+  padding: 0 20px; /* Adiciona um pouco de padding nas laterais para o conteúdo não ficar muito à borda */
+  font-size: 1rem;
 }
+
+.footer p {
+  color: #28a745; /* Verde */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  margin-left: 20px; /* Adiciona um pouco de espaço entre os links */
+}
+
+.footer p:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse para indicar clicabilidade */
+}
+
+
+

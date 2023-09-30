@@ -6,6 +6,12 @@ form {
   border-radius: 8px; /* Cantos arredondados */
   padding: 20px; /* Espaçamento interno */
   color: #fff; /* Texto branco */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionando transição */
+}
+
+form:hover {
+  transform: scale(1.01); /* Sutil aumento de tamanho ao passar o mouse */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
 }
 
 .data-finalizar, .buttons {
@@ -20,16 +26,7 @@ h1 {
 }
 
 .form {
-  width: 70%;
-  text-align: center;
-  background-color: #1a1a1a; /* Fundo preto */
-  border-radius: 8px; /* Cantos arredondados */
-  color: #fff; /* Texto branco */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionando transição */
-}
-form:hover {
-  transform: scale(1.01); /* Sutil aumento de tamanho ao passar o mouse */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+  width: 100%;
 }
 
 .buttons {
@@ -50,6 +47,7 @@ button {
 }
 
 button:hover {
+  background-color: #218838; /* Um verde um pouco mais escuro para o hover */
   transform: scale(1.05); /* Aumentando o tamanho do botão ao passar o mouse */
 }
 
