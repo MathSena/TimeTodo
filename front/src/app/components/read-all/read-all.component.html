@@ -1,6 +1,7 @@
 <div class="container">
      <div class="badge">
-       <button mat-raised-button color="accent" matBadge="{{ closed }}">Finished Task</button>
+       <button (click)="navigateToFinished()" mat-raised-button color="accent" matBadge="{{ closed }}">Finished Task</button>
+
      </div>
 
   <button class="novo-todo mat-elevation-z8" mat-raised-button color="accent">New Todo</button>
