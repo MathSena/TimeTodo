@@ -12,7 +12,7 @@ export interface Todo {
   description?: string;
 
   /** The date and time by which the task should be completed. */
-  timeToFinish: Date;
+  timeToFinish: any;
 
   /** A flag indicating whether the to-do item has been completed. */
   finished: boolean;
