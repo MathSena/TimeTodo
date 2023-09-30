@@ -9,7 +9,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./read-all.component.css']
 })
 export class ReadAllComponent implements OnInit {
-  closed = 1;
+  closed = 0;
   list: Todo[] = [];
   listFinished : Todo[] = [];
 
@@ -37,6 +37,15 @@ export class ReadAllComponent implements OnInit {
         console.error('Failed to fetch todos:', error);
       }
     );
+  }
+
+  finish(item: Todo): void{
+    item.finished = true;
+    this.service.update(item).subscribe(() => {
+        this.service.message('Task successfully completed!');
+        this.list = this.list.filter(todo => todo.id !== item.id);
+        this.closed++;
+    });
   }
 
   delete(id:any): void {

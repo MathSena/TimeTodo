@@ -22,7 +22,7 @@ public class DBService {
             "Acordar antes das 7am",
             "Definir o alarme para as 6:45am",
             dateFormat.parse("25/03/2022"),
-                false);
+                true);
     Todo todo2 =
         new Todo(
             null,
