@@ -13,7 +13,7 @@ import { ReadAllComponent } from './components/read-all/read-all.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatBadgeModule} from '@angular/material/badge';
-
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +29,8 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatButtonModule,
     MatIconModule,
     HttpClientModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
